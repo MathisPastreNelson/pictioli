@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+}
+
+header {
+  background-color: red;
+  height: 10vh;
+}
+
+.home {
+  background-color: yellow;
+  height: 80vh;
+}
+
+footer {
+  background-color: red;
+  height: 10vh;
+}/*# sourceMappingURL=index.css.map */
