@@ -7,25 +7,47 @@ body {
 }
 
 header {
-  background-color: red;
   height: 10vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  background: url("../assets/00005-679464330.png");
+  background-size: cover;
+  color: white;
 }
 
 .home {
-  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+  height: 80vh;
+}
+
+.home_container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(255, 0, 0, 0.432);
+  width: 100vw;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.image {
+  width: 20%;
 }
 
 footer {
-  background-color: red;
   height: 10vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  background: url("../assets/00006-1221024252.png");
+  background-size: cover;
 }/*# sourceMappingURL=index.css.map */

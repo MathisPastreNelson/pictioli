@@ -1,7 +1,26 @@
 .home {
-  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+  height: 80vh;
+}
+
+.home_container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(255, 0, 0, 0.432);
+  width: 100vw;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.image {
+  width: 20%;
 }
