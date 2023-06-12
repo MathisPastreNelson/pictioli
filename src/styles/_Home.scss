@@ -30,15 +30,38 @@
   align-items: center;
   margin: 1vh 5vw;
   cursor: pointer;
-  background-color: rgba(136, 255, 0, 0.692);
+  background-color: rgba(0, 0, 0, 0.514);
   border-radius: 5px;
+  color: white;
+  border: 1px solid black;
+  transition: ease-in 200ms;
+  filter: grayscale(0.8);
 }
 
 .pizzaImage {
   width: 300px;
   border-radius: 5px 5px 0 0;
+  filter: blur(2px);
 }
 
 .pizzaTitle {
   padding: 1rem 0;
+  border-top: 1px solid black;
+  width: 100%;
+}
+
+.pizza_box:hover {
+  background-color: rgba(0, 0, 0, 0.233);
+  filter: grayscale(0);
+}
+
+.pizza_box:hover > .pizzaImage {
+  background-color: rgba(0, 0, 0, 0.233);
+  filter: blur(0);
+}
+
+@media only screen and (max-width: 400px) {
+  .pizzaImage {
+    width: 250px;
+  }
 }

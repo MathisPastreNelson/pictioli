@@ -17,14 +17,23 @@ export default function Home() {
     "Chorizo",
   ];
 
+  /* à ajouter par la suite */
+  const prices = ["14 €", "13 €", "14 €", "18 €", "12 €", "14 €"];
+
   return (
     <div className="home">
       <div className="home_container">
         <div className="pizza-container">
           {images.map((image, index) => (
             <div className="pizza_box" key={index}>
-              <img className="pizzaImage" src={image} alt={`Image ${index}`} />
-              <p className="pizzaTitle">{names[index]}</p> {/* Ajout du nom de la pizza */}
+              {/* Ajout de l'image de la pizza */}
+              <img
+                className="pizzaImage"
+                src={image}
+                alt={`Image ${index}`}
+              />{" "}
+              {/* Ajout du nom de la pizza */}
+              <p className="pizzaTitle">{names[index]}</p>{" "}
             </div>
           ))}
         </div>
