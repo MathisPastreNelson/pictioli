@@ -8,17 +8,26 @@ import Image6 from "../assets/pizzas/00005-1876059330.png";
 
 export default function Home() {
   const images = [Image1, Image2, Image3, Image4, Image5, Image6];
+  const names = [
+    "Chicken",
+    "Cheesy",
+    "Merguezou",
+    "Fruited",
+    "Mushlove",
+    "Chorizo",
+  ];
 
   return (
     <div className="home">
       <div className="home_container">
-        <h2>Choisissez votre pizza à l'avance !</h2>
-                <div className="image-container">
+        <div className="pizza-container">
           {images.map((image, index) => (
-            <img className="image" key={index} src={image} alt={`Image ${index}`} />
+            <div className="pizza_box" key={index}>
+              <img className="pizzaImage" src={image} alt={`Image ${index}`} />
+              <p className="pizzaTitle">{names[index]}</p> {/* Ajout du nom de la pizza */}
+            </div>
           ))}
         </div>
-        <p>Voici la box principale</p>
       </div>
     </div>
   );
